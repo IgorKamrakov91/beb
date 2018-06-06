@@ -6,7 +6,7 @@ html
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
-    title This is Helen Page!
+    title Helen's Page!
   body
     header
       #navbarHeader.collapse.bg-dark
@@ -39,13 +39,16 @@ html
         li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
         li(data-target='#carouselExampleIndicators' data-slide-to='1')
         li(data-target='#carouselExampleIndicators' data-slide-to='2')
+        li(data-target='#carouselExampleIndicators' data-slide-to='3')
       .carousel-inner
+        .carousel-item
+          img.d-block.w-100(src='/images/plan.jpg' alt='Exhibition plan')
+        .carousel-item
+          img.d-block.w-100(src='/images/table.jpg' alt='Interactive table')
+        .carousel-item
+          img.d-block.w-100(src='/images/holo.jpg' alt='Holography')
         .carousel-item.active
-          img.d-block.w-100(src='/images/la.jpg' alt='First slide')
-        .carousel-item
-          img.d-block.w-100(src='/images/chicago.jpg' alt='Second slide')
-        .carousel-item
-          img.d-block.w-100(src='/images/ny.jpg' alt='Third slide')
+          img.d-block.w-100(src='/images/inst.jpg' alt='Installation')  
       a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
         span.carousel-control-prev-icon(aria-hidden='true')
         span.sr-only Previous
