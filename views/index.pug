@@ -5,8 +5,35 @@ html
     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
     title This is Helen Page!
   body
+    header
+      #navbarHeader.collapse.bg-dark
+        .container
+          .row
+            .col-sm-8.col-md-7.py-4
+              h4.text-white Helena Kaprova
+              p.text-muted
+                | I was born in 1993, this is the most important event of my life.
+              p
+                button.btn.btn-secondary.btn-lg(type='button')#button_styles Standard CV 
+            .col-sm-4.offset-md-1.py-4
+              h4.text-white Contact
+              ul.list-unstyled
+                li
+                  a.text-white(href='#') My own exhibition
+                li
+                  a.text-white(href='#carouselExampleIndicators') My projects
+                li
+                  a.text-white(href='#info_link') Email me
+      .navbar.navbar-dark.bg-dark.box-shadow
+        .container.d-flex.justify-content-between
+          a.navbar-brand.d-flex.align-items-center(href='#')
+            strong Helena Karpova
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+
     #carouselExampleIndicators.carousel.slide(data-ride='carousel')
       ol.carousel-indicators
         li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
@@ -25,3 +52,20 @@ html
       a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
         span.carousel-control-next-icon(aria-hidden='true')
         span.sr-only Next
+    #info_link.jumbotron.jumbotron-fluid
+      .container-fluid
+        h1.display-4.middle_position CONTACTS
+        p.lead.middle_position
+          | I'm always in touch. Just drop me a line.
+          br
+          a(href="facebook")
+            i.fab.fa-facebook-square
+          a(href="mail")
+            i.far.fa-envelope
+          a(href="linkedin")  
+            i.fab.fa-linkedin
+    footer.text-muted
+      .container
+        p.float-right
+          a#link_style(href='#') Back to top
+        p Thank you very much, see you soon ^^

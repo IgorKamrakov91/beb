@@ -10,6 +10,19 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/facebook', function(req, res) {
+  res.redirect('https://www.facebook.com/helena.karpova.5');
+});
+
+app.get('/linkedin', function(req, res) {
+  res.redirect('https://www.linkedin.com/in/elenakarpova93/');
+});
+
+app.get('/mail', function(req, res) {
+  res.redirect('mailto:elena.karpova93@gmail.com');
+});
+
+
 var server = app.listen(app.get('port'), function(){
   console.log('Listening on port' + app.get('port'))
 });
