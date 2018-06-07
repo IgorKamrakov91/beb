@@ -19,3 +19,155 @@
 #link_style {
   color: black;
 }
+
+.map {
+	position: relative;
+	text-align: center;
+}
+
+svg {
+  position: absolute;
+  margin-top: 3em;
+  text-align: center ;
+  width: 75%;
+}
+
+
+.main_image {
+	width: 75%;
+	margin-top: 3em;
+}
+
+.part {
+	opacity: 0;
+}
+
+
+.part:hover {
+	transition: opacity .2s ease;
+	opacity: .6;
+}
+
+
+.part1 {
+	opacity: 0;
+}
+
+.part1:hover {
+	transition: opacity .2s ease;
+	opacity: .6;
+}
+
+.part2 {
+	opacity: 0;
+}
+
+.part2:hover {
+	transition: opacity .2s ease;
+	opacity: .6;
+}
+
+.part3 {
+	opacity: 0;
+}
+
+.part3:hover {
+	transition: opacity .2s ease;
+	opacity: .6;
+}
+
+.part4 {
+	opacity: 0;
+}
+
+.part4:hover {
+	transition: opacity .2s ease;
+	opacity: .6;
+}
+
+.description {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	width: 240px;
+	height: 220px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #E7E7E7;
+	opacity: 0.8;
+	left: 15%;
+	top: 5%;
+	font-family: 'Jura', sans-serif;
+	font-size: 13;
+	font-weight: 500;
+	color: black;
+}
+
+.description1 {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	width: 240px;
+	height: 150px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #E7E7E7;
+	opacity: 0.8;
+	left: 13%;
+	top: 73%;
+	font-family: 'Jura';
+	font-size: 13;
+	color: black;
+}
+
+.description2 {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	width: 340px;
+	height: 310px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #E7E7E7;
+	opacity: 0.8;
+	left: 40%;
+	top: 65%;
+	font-family: 'Jura';
+	font-size: 13;
+  color: black;
+  z-index: 9999;
+}
+
+.description3 {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	width: 300px;
+	height: 310px !important;
+	text-align: center;
+	line-height: 20px;
+	background-color: #E7E7E7;
+	opacity: 0.8;
+	left: 75%;
+	top: 5%;
+	font-family: 'Jura';
+	font-size: 13;
+	color: black;
+}
+
+.description4 {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	width: 200px;
+	height: 130px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #E7E7E7;
+	opacity: 0.8;
+	left: 73%;
+	top: 70%;
+	font-family: 'Jura';
+	font-size: 13;
+	color: black;
+}
