@@ -1,9 +1,11 @@
 #carouselExampleIndicators{
   max-height: 100%;
 }
+
 .middle_position {
   text-align: center;
 }
+
 .fab {
   font-size: 5em;
   color: black;
@@ -22,7 +24,7 @@
 
 .map {
 	position: relative;
-	text-align: center;
+  text-align: center;
 }
 
 svg {
@@ -42,6 +44,9 @@ svg {
 	opacity: 0;
 }
 
+#button_styles{
+  background: grey;
+}
 
 .part:hover {
 	transition: opacity .2s ease;
@@ -96,10 +101,10 @@ svg {
 	opacity: 1;
   top: 75%;
   margin: 0 15%;
-	font-family: 'Jura';
-  font-size: 14;
-  font-weight: 600;
-  color: antiquewhite;
+  font-size: 16;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  color: rgb(211, 210, 210);
   z-index: 9999;
 }
 
@@ -114,10 +119,10 @@ svg {
 	opacity: 1;
   top: 75%;
   margin: 0 15%;
-	font-family: 'Jura';
-  font-size: 14;
-  font-weight: 600;
-  color: antiquewhite;
+  font-size: 16;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  color: rgb(211, 210, 210);
   z-index: 9999;
 }
 
@@ -132,10 +137,10 @@ svg {
 	opacity: 1;
   top: 75%;
   margin: 0 15%;
-	font-family: 'Jura';
-  font-size: 14;
-  font-weight: 600;
-  color: antiquewhite;
+  font-size: 16;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  color: rgb(211, 210, 210);
   z-index: 9999;
 }
 
@@ -150,17 +155,17 @@ svg {
 	opacity: 1;
   top: 75%;
   margin: 0 15%;
-	font-family: 'Jura';
-  font-size: 14;
-  font-weight: 600;
-  color: antiquewhite;
+  font-size: 16;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  color: rgb(211, 210, 210);
   z-index: 9999;
 }
 
 .description4 {
 	display: none;
 	position: absolute;
-	padding: 10px;
+	padding: 30px;
 	width: 70%;
 	text-align: center;
 	line-height: 20px;
@@ -168,9 +173,19 @@ svg {
 	opacity: 1;
   top: 75%;
   margin: 0 15%;
-	font-family: 'Jura';
-  font-size: 14;
-  font-weight: 600;
-  color: antiquewhite;
+  font-size: 16;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  color: rgb(211, 210, 210);
   z-index: 9999;
+}
+
+.fa-smile {
+  font-size: 1em;
+  margin: 0;
+}
+
+.special {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
 }
