@@ -10,6 +10,10 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/ru', function (req, res) {
+  res.render('about');
+});
+
 app.get('/facebook', function(req, res) {
   res.redirect('https://www.facebook.com/helena.karpova.5');
 });
