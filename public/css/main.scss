@@ -24,14 +24,20 @@
 
 .map {
 	position: relative;
-  text-align: center;
+	text-align: center;
+	width: 100%;
+	display: block;
+	position: relative;
 }
 
 svg {
   position: absolute;
   margin-top: 3em;
   text-align: center ;
-  width: 75%;
+	width: 75%;
+	height: 75%;
+	top: 17%;
+	left: 12.5%;
 }
 
 
