@@ -26,6 +26,10 @@ app.get('/mail', function(req, res) {
   res.redirect('mailto:elena.karpova93@gmail.com');
 });
 
+app.get('/instagram', function(req, res) {
+  res.redirect('https://www.instagram.com/robbylittlerabbit/');
+});
+
 
 var server = app.listen(app.get('port'), function(){
   console.log('Listening on port' + app.get('port'))

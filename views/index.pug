@@ -1,128 +1,631 @@
-html
+html.no-js(lang='en')
   head
-    meta(charset="UTF-8")
-    meta(name="description" content="")
-    meta(name="keywords" content=" ")
-    meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    meta(name="viewport" content="width=device-width, minimum-scale=1.0")
-    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous")
-    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
-    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")
-    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
-    link(href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet")
-    link(rel="stylesheet", href="/css/main.scss")
-    link(rel="shortcut icon" type="image/png" href="/images/favicon.png")
-    title Helen's CV!
+    // meta data
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    // font-family
+    link(href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&subset=devanagari,latin-ext', rel='stylesheet')
+    // title of site
+    title Helena Karpova
+    // For favicon png
+    link(rel='shortcut icon', type='image/icon', href='assets/logo/favicon.png')
+    // font-awesome.min.css
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+    // flat icon css
+    link(rel='stylesheet', href='/css/flaticon.css')
+    // animate.css
+    link(rel='stylesheet', href='/css/animate.css')
+    // owl.carousel.css
+    link(rel='stylesheet', href='/css/owl.carousel.min.css')
+    link(rel='stylesheet', href='/css/owl.theme.default.min.css')
+    // bootstrap.min.css
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    // bootsnav
+    link(rel='stylesheet', href='/css/bootsnav.css')
+    // style.css
+    link(rel='stylesheet', href='/css/style.css')
+    // responsive.css
+    link(rel='stylesheet', href='/css/responsive.css')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
-    header
-      #navbarHeader.collapse.bg-dark
+    //if lte IE 9
+      p.browserupgrade
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='https://browsehappy.com/') upgrade your browser
+        |  to improve your experience and security.
+    // top-area Start
+    header.top-area
+      .header-area
+        // Start Navigation
+        nav.navbar.navbar-default.bootsnav.navbar-fixed.dark.no-background
+          .container
+            // Start Header Navigation
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-menu')
+                i.fa.fa-bars
+              a.navbar-brand(href='index.html') Helena Karpova
+            // /.navbar-header
+            // End Header Navigation
+            // Collect the nav links, forms, and other content for toggling
+            #navbar-menu.collapse.navbar-collapse.menu-ui-design
+              ul.nav.navbar-nav.navbar-right(data-in='fadeInDown', data-out='fadeOutUp')
+                li.smooth-menu.active
+                li.smooth-menu
+                  a(href='#education') education
+                li.smooth-menu
+                  a(href='#skills') skills
+                li.smooth-menu
+                  a(href='#experience') experience
+                li.smooth-menu
+                  a(href='#profiles') profile
+                li.smooth-menu
+                  a(href='#portfolio') portfolio
+                li.smooth-menu
+                  a(href='#clients') clients
+                li.smooth-menu
+                  a(href='#contact') contact
+              // /.nav
+            // /.navbar-collapse
+          // /.container
+        // /nav
+        // End Navigation
+      // /.header-area
+      .clearfix
+    // /.top-area
+    // top-area End
+    // welcome-hero start
+    section#welcome-hero.welcome-hero
+      .container
+        .row
+          .col-md-12.text-center
+            .header-text
+              h2
+                | hi 
+                span ,
+                |  i am 
+                br
+                |  helena 
+                br
+                |  karpova 
+                span .
+              p museum designer and concept developer
+              a(href='cv.pdf', download='') download resume
+            // /.header-text
+          // /.col
+        // /.row
+      // /.container
+    // /.welcome-hero
+    // welcome-hero end
+    // about start
+    section#about.about
+      .section-heading.text-center
+        h2 about me
+      .container
+        .about-content
+          .row
+            .col-sm-6
+              .single-about-txt
+                h3
+                  | I am a Professional Museum Exhibition developer. Consectetur an adipisi elita, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+                p
+                  | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam vo luptatem quia voluptas sit aspernatur aut odit aut fugit,
+                .row
+                  .col-sm-4
+                    .single-about-add-info
+                      h3 phone
+                      p +7 (952) 375-47-03
+                  .col-sm-4
+                    .single-about-add-info
+                      h3 email
+                      p elena.karpova93@gmail.com
+            .col-sm-offset-1.col-sm-5
+              .single-about-img
+                img(src='/images/about/profile_image.jpg', alt='profile_image')
+                .about-list-icon
+                  ul
+                    li
+                      a(href='/facebook')
+                        i.fa.fa-facebook(aria-hidden='true')
+                    // / li
+                    li
+                      a(href='/linkedin')
+                        i.fa.fa-linkedin(aria-hidden='true')
+                    // / li
+                    li
+                      a(href='/instagram')
+                        i.fa.fa-instagram(aria-hidden='true')
+                    // / li
+                  // / ul
+                // /.about-list-icon
+    // /.about
+    // about end
+    // education start
+    section#education.education
+      .section-heading.text-center
+        h2 education
+      .container
+        .education-horizontal-timeline
+          .row
+            .col-sm-4
+              .single-horizontal-timeline
+                .experience-time
+                  h2 2008 - 2010
+                  h3
+                    | master 
+                    span of 
+                    |  computer science
+                // /.experience-time
+                .timeline-horizontal-border
+                  i.fa.fa-circle(aria-hidden='true')
+                  span.single-timeline-horizontal
+                .timeline
+                  .timeline-content
+                    h4.title
+                      | university of north carolina
+                    h5 north carolina, USA
+                    p.description
+                      | Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                  // /.timeline-content
+                // /.timeline
+            .col-sm-4
+              .single-horizontal-timeline
+                .experience-time
+                  h2 2004 - 2008
+                  h3
+                    | bachelor 
+                    span of 
+                    |  computer science
+                // /.experience-time
+                .timeline-horizontal-border
+                  i.fa.fa-circle(aria-hidden='true')
+                  span.single-timeline-horizontal
+                .timeline
+                  .timeline-content
+                    h4.title
+                      | university of north carolina
+                    h5 north carolina, USA
+                    p.description
+                      | Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                  // /.timeline-content
+                // /.timeline
+            .col-sm-4
+              .single-horizontal-timeline
+                .experience-time
+                  h2 2004 - 2008
+                  h3
+                    | bachelor 
+                    span of 
+                    |  creative design
+                // /.experience-time
+                .timeline-horizontal-border
+                  i.fa.fa-circle(aria-hidden='true')
+                .timeline
+                  .timeline-content
+                    h4.title
+                      | university of bolton
+                    h5 bolton, united kingdome
+                    p.description
+                      | Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                  // /.timeline-content
+                // /.timeline
+    // /.education
+    // education end
+    // skills start
+    section#skills.skills
+      .skill-content
+        .section-heading.text-center
+          h2 skills
         .container
           .row
-            .col-sm-8.col-md-9.py-4
-              h4.text-white Helena Kaprova
-              p.text-white
-                | Hi! I'm junior exhibition designer. And this is my CV. 
-              p.text-white  
-                | This page is about my expirience in museum planning and design.
-                | Here you can see interactive map about me, projects I was involved in
-                | and standard cv at the button near.
-                | My contacts you can find down below.
-              p.text-white  
-                | Thank You!
-            .col-sm-2.offset-md-1.py-4
-              p
-                a.btn.btn-outline-light.btn-lg(href='cv.pdf' role='button') Standard CV
-              p
-                a.btn.btn-outline-secondary(href='/ru') Русская версия
-              //- h4.text-white Contact
-              //- ul.list-unstyled
-              //-   li
-              //-     a.text-white(href='#') My own exhibition
-              //-   li
-              //-     a.text-white(href='#carouselExampleIndicators') My projects
-              //-   li
-              //-     a.text-white(href='#info_link') Email me
-      .navbar.navbar-dark.bg-dark.box-shadow
-        .container.d-flex.justify-content-between
-          a.navbar-brand.d-flex.align-items-center(href='#')
-            strong Helena Karpova
-          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-
-    .map
-      br
-      h1.special SELECT ANY ROOM
-      p.special And you will know some about me
-
-      svg(viewbox='0 0 2560 1440' preserveAspectRatio="none")
-        path.part(d='m 277.00141,187.157 -120.39604,393.77652 638.18954,2.7157 C 833.3799,300.08029 1085.5077,201.79049 1278.1895,201.64074 l -2.7157,-16.29421 z' fill='#414141' description-data='<b>SKILLS</b><br><br> - Exhibiton planning and design;<br> - Concept creation;<br> - Interactive multimedia installation;<br> - Simple 3D-visualisation: SketchUp, 3ds Max;<br> - Simple Photoshop skills;<br> -Science research.')
-        path.part1(d='m 159.80585,581.25357 636.26925,-4.64541 c 2.73941,341.30579 314.8043,422.75624 473.5469,431.75084 l 0.375,26.8369 -1251.892332,2.8805 z' fill='#414141' description-data1="<b>ABOUT ME</b><br><br>1993 - born in Saint Petersburg, Russia<br>2000-2011 - school<br>2011-2015 - Bachelor's degree<br>2015-2017 - Master's degree<br>2017-present - working")
-        path.part2(d='m 1278.1895,201.64074 c 141.733,7.22548 200.8829,35.27162 252.9994,64.42198 0,0 78.8406,39.48977 134.3426,112.65701 61.4039,78.13114 131.0196,203.86992 35.8454,401.98071 -21.7128,35.29871 -41.4212,70.22622 -94.7343,111.37682 -59.8398,39.79896 -144.1105,111.97474 -343.8099,113.11344 -75.388,-1.7312 -178.5771,-1.4722 -306.15332,-93.01864 -57.03941,-35.71598 -72.63661,-68.71626 -100.97996,-104.43225 -67.84626,-120.86449 -96.5505,-253.89657 5.87069,-405.97659 66.14298,-83.80935 92.24838,-100.57341 125.83391,-122.5236 89.26648,-53.83563 186.73178,-79.49969 290.78548,-77.59888' fill='#414141' description-data2='<b>EDUCATION</b><br><br><b> 2011-2015</b><br><b>SAINT-PETERSBURG STATE UNIVERSITY OF CULTURE AND ARTS</b><br><i>BACHELOR OF MUSEOLOGY</i><br>Research theme: Conceptual ways of exhibiting  contemoparary arts<br><br> <b>2015-2017</b><br><b>SAINT-PETERSBURG STATE UNIVERSITY OF CULTURE AND ARTS</b><br><i>MASTER OF MUSEOLOGY</i><br>Research theme: Augmented reality as a way of visualisation and presentation of cultural heritage in a museum')
-        path.part3(d='m 1743.5564,578.02141 633.7061,-1.92148 -118.7478,-393.52033 -963.9807,0.55303 0.04,15.50639 c 224.557,26.30673 407.5423,104.85004 448.9821,379.38239 z' fill='#414141' description-data3='<b>EXPERIENCE</b><br><br>2017 - present<br>Kamerton Pro<br><br><b>Responsibilities</b><br> - Preparing primary offers for museums: exposition renovation,<br> integration of interactive multimedia installations, creating plans<br> of temporary exhibition and full museum concepts;<br> - Making visual presentation for each offer;<br> - Simple visualization of exhibitions and multimedia installations.')
-        path.part4(d='m 1743.2844,574.4888 634.2498,-1.10626 135.5095,447.05216 -1221.7872,6.3514 -0.7686,-28.81786 c 144.5102,-1.6294 460.4188,-84.62799 452.7965,-423.47944 z' fill='#414141' description-data4='<b>FUTURE</b><br><br>Work in a team of professionals in the field of museum planning and design')
-      .description
-      .description1
-      .description2
-      .description3
-      .description4
-      img.main_image(src='/images/final_plan.png' alt='Final plan')
-
-    h1.middle_position.special SOME OF MY PROJECTS
-    br
-    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
-      ol.carousel-indicators
-        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-        li(data-target='#carouselExampleIndicators' data-slide-to='1')
-        li(data-target='#carouselExampleIndicators' data-slide-to='2')
-        li(data-target='#carouselExampleIndicators' data-slide-to='3')
-        li(data-target='#carouselExampleIndicators' data-slide-to='4')
-        li(data-target='#carouselExampleIndicators' data-slide-to='5')
-        li(data-target='#carouselExampleIndicators' data-slide-to='6')
-      .carousel-inner
-        .carousel-item.active
-          img.d-block.w-100(src='/images/timeline.jpg' alt='Time line')
-        .carousel-item
-          img.d-block.w-100(src='/images/prof.jpg' alt='Interactive zone')
-        .carousel-item
-          img.d-block.w-100(src='/images/screen.jpg' alt='Chill zone')
-        .carousel-item
-          img.d-block.w-100(src='/images/plan.jpg' alt='Exhibition plan')
-        .carousel-item
-          img.d-block.w-100(src='/images/table.jpg' alt='Interactive table')
-        .carousel-item
-          img.d-block.w-100(src='/images/holo.jpg' alt='Holography')
-        .carousel-item
-          img.d-block.w-100(src='/images/inst.jpg' alt='Installation')  
-      a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
-        span.carousel-control-prev-icon(aria-hidden='true')
-        span.sr-only Previous
-      a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
-        span.carousel-control-next-icon(aria-hidden='true')
-        span.sr-only Next
-
-    #info_link.jumbotron.jumbotron-fluid
-      .container-fluid
-        h1.display-4.middle_position CONTACTS
-        p.lead.middle_position.special
-          | I'm always in touch. Just drop me a line.
-          br
-          a(href="facebook")
-            i.fab.fa-facebook-square
-          a(href="mail")
-            i.far.fa-envelope
-          a(href="linkedin")  
-            i.fab.fa-linkedin
-          a(href="skype:tahti93?chat")
-            i.fab.fa-skype
-
-    footer.text-muted
+            .col-md-6
+              .single-skill-content
+                .barWrapper
+                  span.progressText adobe photoshop
+                  .single-progress-txt
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='10', aria-valuemax='100', style='')
+                    h3 90%
+                // /.barWrapper
+                .barWrapper
+                  span.progressText sketch
+                  .single-progress-txt
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='10', aria-valuemax='100', style='')
+                    h3 95%
+                // /.barWrapper
+                .barWrapper
+                  span.progressText html 5
+                  .single-progress-txt
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='10', aria-valuemax='100', style='')
+                    h3 90%
+            .col-md-6
+              .single-skill-content
+                // /.barWrapper
+                .barWrapper
+                  span.progressText css
+                  .single-progress-txt
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='85', aria-valuemin='10', aria-valuemax='100', style='')
+                    h3 85%
+                // /.barWrapper
+                .barWrapper
+                  span.progressText communication
+                  .single-progress-txt
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='97', aria-valuemin='10', aria-valuemax='100', style='')
+                    h3 97%
+                // /.barWrapper
+                .barWrapper
+                  span.progressText  creativity
+                  .single-progress-txt
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='10', aria-valuemax='100', style='')
+                    h3 90%
+                // /.barWrapper
+          // /.row
+        // /.container
+      // /.skill-content
+    // /.skills
+    // skills end
+    // experience start
+    section#experience.experience
+      .section-heading.text-center
+        h2 experience
       .container
-        .block
-          p.float-left.special Thank you very much, hope see you soon 
-            i.far.fa-smile
-          p.float-right.special
-            a#link_style(href='#') Back to top
-
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-  script(src="js/main.js")
+        .experience-content
+          .main-timeline
+            ul
+              li
+                .single-timeline-box.fix
+                  .row
+                    .col-md-5
+                      .experience-time.text-right
+                        h2 2018 - Present
+                        h3 creative director
+                      // /.experience-time
+                    // /.col
+                    .col-md-offset-1.col-md-5
+                      .timeline
+                        .timeline-content
+                          h4.title
+                            span
+                              i.fa.fa-circle(aria-hidden='true')
+                            | 															hoplony tech limited
+                          h5 newyork, USA
+                          p.description
+                            | Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                        // /.timeline-content
+                      // /.timeline
+                    // /.col
+                // /.single-timeline-box
+              li
+                .single-timeline-box.fix
+                  .row
+                    .col-md-offset-1.col-md-5.experience-time-responsive
+                      .experience-time
+                        h2
+                          span
+                            i.fa.fa-circle(aria-hidden='true')
+                          | 														2012 - 2013
+                        h3 UI/UX designer
+                      // /.experience-time
+                    // /.col
+                    .col-md-5
+                      .timeline
+                        .timeline-content.text-right
+                          h4.title
+                            | hoplony tech limited
+                          h5 newyork, USA
+                          p.description
+                            | Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                        // /.timeline-content
+                      // /.timeline
+                    // /.col
+                    .col-md-offset-1.col-md-5.experience-time-main
+                      .experience-time
+                        h2
+                          span
+                            i.fa.fa-circle(aria-hidden='true')
+                          | 														2012 - 2013
+                        h3 UI/UX designer
+                      // /.experience-time
+                    // /.col
+                // /.single-timeline-box
+              li
+                .single-timeline-box.fix
+                  .row
+                    .col-md-5
+                      .experience-time.text-right
+                        h2 2010 - 2012
+                        h3 frontend developer
+                      // /.experience-time
+                    // /.col
+                    .col-md-offset-1.col-md-5
+                      .timeline
+                        .timeline-content
+                          h4.title
+                            span
+                              i.fa.fa-circle(aria-hidden='true')
+                            | 															hoplony tech limited
+                          h5 newyork, USA
+                          p.description
+                            | Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+                        // /.timeline-content
+                      // /.timeline
+                    // /.col
+                // /.single-timeline-box
+          // .main-timeline
+        // .experience-content
+    // /.experience
+    // experience end
+    // profiles start
+    section#profiles.profiles
+      .profiles-details
+        .section-heading.text-center
+          h2 profiles
+        .container
+          .profiles-content
+            .row
+              .col-sm-3
+                .single-profile
+                  .profile-txt
+                    a(href='')
+                      i.flaticon-themeforest
+                    .profile-icon-name themeforest
+                  .single-profile-overlay
+                    .profile-txt
+                      a(href='')
+                        i.flaticon-themeforest
+                      .profile-icon-name themeforest
+              .col-sm-3
+                .single-profile
+                  .profile-txt
+                    a(href='')
+                      i.flaticon-dribbble
+                    .profile-icon-name dribbble
+                  .single-profile-overlay
+                    .profile-txt
+                      a(href='')
+                        i.flaticon-dribbble
+                      .profile-icon-name dribbble
+              .col-sm-3
+                .single-profile
+                  .profile-txt
+                    a(href='')
+                      i.flaticon-behance-logo
+                    .profile-icon-name behance
+                  .single-profile-overlay
+                    .profile-txt
+                      a(href='')
+                        i.flaticon-behance-logo
+                      .profile-icon-name behance
+              .col-sm-3
+                .single-profile.profile-no-border
+                  .profile-txt
+                    a(href='')
+                      i.flaticon-github-logo
+                    .profile-icon-name github
+                  .single-profile-overlay
+                    .profile-txt
+                      a(href='')
+                        i.flaticon-github-logo
+                      .profile-icon-name github
+            .profile-border
+            .row
+              .col-sm-3
+                .single-profile
+                  .profile-txt
+                    a(href='')
+                      i.flaticon-flickr-website-logo-silhouette
+                    .profile-icon-name flickR
+                  .single-profile-overlay
+                    .profile-txt
+                      a(href='')
+                        i.flaticon-flickr-website-logo-silhouette
+                      .profile-icon-name flickR
+              .col-sm-3
+                .single-profile
+                  .profile-txt
+                    a(href='')
+                      i.flaticon-smug
+                    .profile-icon-name smungMung
+                  .single-profile-overlay
+                    .profile-txt
+                      a(href='')
+                        i.flaticon-smug
+                      .profile-icon-name smungMung
+              .col-sm-3
+                .single-profile
+                  .profile-txt
+                    a(href='')
+                      i.flaticon-squarespace-logo
+                    .profile-icon-name squareSpace
+                  .single-profile-overlay
+                    .profile-txt
+                      a(href='')
+                        i.flaticon-squarespace-logo
+                      .profile-icon-name squareSpace
+              .col-sm-3
+                .single-profile.profile-no-border
+                  .profile-txt
+                    a(href='')
+                      i.flaticon-bitbucket-logotype-camera-lens-in-perspective
+                    .profile-icon-name bitBucket
+                  .single-profile-overlay
+                    .profile-txt
+                      a(href='')
+                        i.flaticon-bitbucket-logotype-camera-lens-in-perspective
+                      .profile-icon-name bitBucket
+    // /.profiles
+    // profiles end
+    // portfolio start
+    section#portfolio.portfolio
+      .portfolio-details
+        .section-heading.text-center
+          h2 portfolio
+        .container
+          .portfolio-content
+            .isotope
+              .row
+                .col-sm-4
+                  .item
+                    img(src='/images/portfolio/p1.jpg', alt='portfolio image')
+                    .isotope-overlay
+                      a(href='#')
+                        | ui/ux design
+                    // /.isotope-overlay
+                  // /.item
+                .col-sm-4
+                  .item
+                    img(src='/images/portfolio/p3.jpg', alt='portfolio image')
+                    .isotope-overlay
+                      a(href='#')
+                        | web design
+                    // /.isotope-overlay
+                  // /.item
+                // /.col
+                .col-sm-4
+                  .item
+                    img(src='/images/portfolio/p4.jpg', alt='portfolio image')
+                    .isotope-overlay
+                      a(href='#')
+                        | web development
+                    // /.isotope-overlay
+                  // /.item
+                // /.col
+              // /.row
+            // /.isotope
+          // /.gallery-content
+        // /.container
+      // /.portfolio-details
+    // /.portfolio
+    // portfolio end
+    // clients start
+    section#clients.clients
+      .section-heading.text-center
+        h2 clients
+      .clients-area
+        .container
+          #client.owl-carousel.owl-theme
+            .item
+              a(href='#')
+                img(src='/images/clients/c1.png', alt='brand-image')
+            // /.item
+            .item
+              a(href='#')
+                img(src='/images/clients/c2.png', alt='brand-image')
+            // /.item
+            .item
+              a(href='#')
+                img(src='/images/clients/c3.png', alt='brand-image')
+            // /.item
+            .item
+              a(href='#')
+                img(src='/images/clients/c4.png', alt='brand-image')
+            // /.item
+            .item
+              a(href='#')
+                img(src='/images/clients/c5.png', alt='brand-image')
+            // /.item
+            .item
+              a(href='#')
+                img(src='/images/clients/c6.png', alt='brand-image')
+            // /.item
+            .item
+              a(href='#')
+                img(src='/images/clients/c7.png', alt='brand-image')
+            // /.item
+          // /.owl-carousel
+        // /.container
+      // /.clients-area
+    // /.clients
+    // /.clients
+    // clients end
+    // contact start
+    section#contact.contact
+      .section-heading.text-center
+        h2 contact me
+      .container
+        .contact-content
+          .row
+            .col-md-offset-1.col-md-5.col-sm-6
+              .single-contact-box
+                .contact-form
+                  .header-text
+                    a(href='/mail') Email Me
+            .col-md-offset-1.col-md-5.col-sm-6
+              .single-contact-box
+                .contact-adress
+                  .contact-add-head
+                    h3 Helena Karpova
+                    p concept developer
+                  .contact-add-info
+                    .single-contact-add-info
+                      h3 phone
+                      p +7 (952) 345-47-03
+                    .single-contact-add-info
+                      h3 email
+                      p elena.karpova93@gmail.com
+                // /.contact-adress
+                .hm-foot-icon
+                  ul
+                    li
+                      a(href='/facebook')
+                        i.fa.fa-facebook
+                    // /li
+                    li
+                      a(href='/instagram')
+                        i.fa.fa-instagram
+                    // /li
+                    li
+                      a(href='/linkedin')
+                        i.fa.fa-linkedin
+                    // /li
+                  // /ul
+                // /.hm-foot-icon
+              // /.single-contact-box
+            // /.col
+          // /.row
+        // /.contact-content
+      // /.container
+    // /.contact
+    // contact end
+    // footer-copyright start
+    footer#footer-copyright.footer-copyright
+      // /.container
+      #scroll-Top
+        .return-to-top
+          i#scroll-top.fa.fa-angle-up
+      // /.scroll-Top
+    // /.footer-copyright
+    // footer-copyright end
+    // Include all js compiled plugins (below), or include individual files as needed
+    script(src='/js/jquery.js')
+    // modernizr.min.js
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
+    // bootstrap.min.js
+    script(src='/js/bootstrap.min.js')
+    // bootsnav js
+    script(src='/js/bootsnav.js')
+    // jquery.sticky.js
+    script(src='/js/jquery.sticky.js')
+    // for progress bar start
+    // progressbar js
+    script(src='/js/progressbar.js')
+    // appear js
+    script(src='/js/jquery.appear.js')
+    // for progress bar end
+    // owl.carousel.js
+    script(src='/js/owl.carousel.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+    // Custom JS
+    script(src='/js/custom.js')
