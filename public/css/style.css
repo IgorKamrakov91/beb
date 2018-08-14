@@ -650,12 +650,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -ms-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
+    text-align: center;
+    color: #fff;
 }
 .isotope-overlay a {
     display: inline-block;
     color: #fff;
     font-size: 14px;
     text-align: center;
+    text-decoration: underline;
 }
 .isotope .item:hover .isotope-overlay{
     -webkit-transform:scale(1);
