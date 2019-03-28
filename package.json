@@ -12,6 +12,8 @@
     "bootstrap": "^4.1.1",
     "eslint": "^4.19.1",
     "express": "^4.16.3",
+    "justifiedGallery": "^3.7.0",
+    "lightbox2": "^2.10.0",
     "pug": "^2.0.3"
   }
 }

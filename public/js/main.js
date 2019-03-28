@@ -48,3 +48,5 @@ $('.part4').hover (
 		$('.description4').fadeOut(50);
 	}
 )
+
+$("#mygallery").justifiedGallery();

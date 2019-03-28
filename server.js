@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/ru', function (req, res) {
-  res.render('about');
+  res.render('ru');
 });
 
 app.get('/facebook', function(req, res) {
