@@ -27,7 +27,7 @@ app.get('/mail', function(req, res) {
 });
 
 app.get('/instagram', function(req, res) {
-  res.redirect('https://www.instagram.com/robbylittlerabbit/');
+  res.redirect('https://www.instagram.com/lazy_helena/');
 });
 
 
